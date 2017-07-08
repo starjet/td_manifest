@@ -16,6 +16,24 @@ namespace ConsoleApplication11
             string s = File.ReadAllText("manifest.data"); //manifest filename
             char[] a = "THEQUICKBROWNFOXJUMPSOVERTHELAZYDOGthequickbrownfoxjumpsoverthelazydog0123456789".ToCharArray();
             bool b = false;
+            try
+            {
+                File.Delete("out.txt");
+            }
+            catch
+            { }
+            try
+            {
+                File.Delete("out2.txt");
+            }
+            catch
+            { }
+            try
+            {
+                File.Delete("out3.txt");
+            }
+            catch
+            { }
             foreach (char c in s.ToCharArray())
             {
                 if (a.Contains(c) || c.Equals('_') || c.Equals('.'))

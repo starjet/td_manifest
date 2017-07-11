@@ -63,7 +63,7 @@ namespace ConsoleApplication11
                     }
                     else if (f)
                     {
-                        string x = "https://td-assets.bn765.com/1/production/5.6/Android/" + s2 + "\r\n";
+                        string x = "https://td-assets.bn765.com/1/production/5.6/Android/" + s2 + "\r\n"; //replace /1/ with the number relevant to the update
                         x = x.Replace("Android/0", "Android/");
                         File.AppendAllText("out2.txt", x);
                         f = !f;
